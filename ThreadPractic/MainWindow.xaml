@@ -17,7 +17,8 @@
                 <Button Height="40" Width="100" Content="Load To" Command="{Binding LoadToCommand}" Margin="10"/>
             </StackPanel>
             <StackPanel HorizontalAlignment="Center" Margin="10" Orientation="Horizontal">
-                <ProgressBar Value="{Binding CurrentValue}" Maximum="{Binding Maximum}"  Foreground="Green" Background="Transparent" Height="40" Width="420" Margin="10"/>
+                <ProgressBar Value="{Binding CurrentValue}" Maximum="{Binding Maximum}"  Foreground="Green" Background="Transparent" Height="40" Width="380" Margin="10"/>
+                <Label Content="{Binding Precentage}" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="40" Width="40"/>
             </StackPanel>
             <StackPanel   Margin="10" Orientation="Horizontal">
                 <Button Height="40" Width="100" Command="{Binding PauseCommand}" Content="Pause" Margin="10"/>

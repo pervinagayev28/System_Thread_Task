@@ -24,3 +24,4 @@ C:\Users\user\OneDrive\Desktop\ThreadPractic\ThreadPractic\obj\Debug\net7.0-wind
 C:\Users\user\OneDrive\Desktop\ThreadPractic\ThreadPractic\obj\Debug\net7.0-windows\ThreadPractic.pdb
 C:\Users\user\OneDrive\Desktop\ThreadPractic\ThreadPractic\obj\Debug\net7.0-windows\ThreadPractic.genruntimeconfig.cache
 C:\Users\user\OneDrive\Desktop\ThreadPractic\ThreadPractic\obj\Debug\net7.0-windows\ref\ThreadPractic.dll
+C:\Users\user\OneDrive\Desktop\ThreadPractic\ThreadPractic\obj\Debug\net7.0-windows\ThreadPractic.sourcelink.json

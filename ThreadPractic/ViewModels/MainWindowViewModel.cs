@@ -18,6 +18,7 @@ namespace ThreadPractic.ViewModels
         private string toPath;
         private long maximum;
         private long currentValue;
+        private long precentage;
 
         public ICommand LoadFromCommand { get; set; }
         public ICommand LoadToCommand { get; set; }
@@ -29,7 +30,7 @@ namespace ThreadPractic.ViewModels
         public string ToPath { get => toPath; set { toPath = value; OnPropertyChanged(); } }
         public long Maximum { get => maximum; set { maximum = value; OnPropertyChanged(); } }
         public long CurrentValue { get => currentValue; set { currentValue = value; OnPropertyChanged(); } }
-
+        public long Precentage { get => precentage; set { precentage = value; OnPropertyChanged(); } }
         public bool IsPaused { get; private set; }
         public bool IsAbort { get; private set; }
         public bool IsCopy { get; private set; }
@@ -62,6 +63,7 @@ namespace ThreadPractic.ViewModels
             IsPaused = false;
             IsCopy = false;
             CurrentValue = 0;
+            Precentage = 0;
             
         }
         private bool CanExecuteCopyCommand(object obj) =>
@@ -115,6 +117,7 @@ namespace ThreadPractic.ViewModels
                         writeStream.Write(buffer, 0, readTemp);
                         length -= readTemp;
                         CurrentValue += readTemp; ;
+                        Precentage= CurrentValue * 100 / Maximum;
                     } while (length > 0);
                 }
             };
